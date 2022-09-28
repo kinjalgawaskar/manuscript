@@ -1,0 +1,161 @@
+body {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: auto auto auto auto 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title title sidebar"
+    "body1 body1 sidebar"
+    "quote1 quote1 sidebar"
+    "body2 body2 sidebar"
+    "image1 body3 sidebar";
+}
+
+.sidebar {
+  align-self: stretch;
+  grid-area: sidebar;
+  margin-left: auto;
+}
+.sidebar-header {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 85px;
+  font-family: "Playfair Display", serif;
+}
+.sidebar-title {
+  width: 100%;
+  letter-spacing: 10px;
+  font-size: 125px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  white-space: nowrap;
+  color: blue;
+  overflow: hidden;
+  margin-block: auto;
+  font-weight: bolder;
+  font-family: "Inter Tight", sans-serif;
+}
+.sidebar-title-gray {
+  color: gray;
+}
+
+.title {
+  grid-area: title;
+  border-right: 1px solid gray;
+}
+.title-title-1 {
+  font-size: 60px;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+.title-title-2 {
+  font-size: 60px;
+  margin-left: 4px;
+  color: grey;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.title-subtitle-1 {
+  display: inline-block;
+  width: 100%;
+  font-size: 32px;
+  font-family: "Inter Tight", sans-serif;
+}
+.title-subtitle-2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 32px;
+  font-family: "Inter Tight", sans-serif;
+}
+.title-horizontal-line-container {
+  float: left;
+  width: 25%;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+.title-horizontal-line {
+  background-color: black;
+  border: 0 none;
+  color: black;
+  height: 2px;
+}
+
+.body1 {
+  grid-area: body1;
+  padding-right: 25px;
+  font-family: "Inter Tight", sans-serif;
+  padding-top: 100px;
+  font-size: 26px;
+  border-right: 1px solid gray";
+}
+
+.quote1 {
+  grid-area: quote1;
+  text-align: right;
+  align-self: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.quote-1-text {
+  font-style: italic;
+  font-size: 30px;
+  color: lightgray;
+}
+.quote-2-text {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 22px;
+}
+
+.body2 {
+  grid-area: body2;
+  padding-right: 15px;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 26px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  border-right: 1px solid gray;
+}
+
+.image1 {
+  grid-area: image1;
+  align-items: center;
+  margin: 22 auto 0 auto;
+}
+
+.body3 {
+  grid-area: body3;
+}
+.body-3-quote-text {
+  width: 80%;
+  text-align: right;
+  padding-right: 5%;
+  font-size: 50px;
+  font-family: "Inter Tight", sans-serif;
+}
+.body-3-quote-author {
+  width: 60%;
+  margin-top: 15px;
+  writing-mode: vertical-lr;
+
+  
+  font-size: 27px;
+  font-family: "Inter Tight", sans-serif;
+  color: gray;
+}
+.body-3-body {
+  padding-right: 55px;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 26px;
+}
+.footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 600;
+font-size: large;
+}
